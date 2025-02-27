@@ -4,136 +4,64 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-2" value="&lt;div&gt;Tienda Bonito&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+        <mxCell id="MobileApp" value="Mobile App (React Native)" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
           <mxGeometry x="430" y="195" width="270" height="460" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-4" value="&lt;div&gt;Authentication&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
+        <mxCell id="Website" value="Website (React)" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="100" y="195" width="270" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Backend" value="Backend (Django)" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="760" y="195" width="270" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ObjectScanner" value="Object Scanner" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="MobileApp">
           <mxGeometry x="20" y="60" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-6" value="Add to cart" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="20.000000000000004" y="147.5" width="80" height="30" as="geometry" />
+        <mxCell id="ARViewer" value="AR Viewer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="MobileApp">
+          <mxGeometry x="20" y="147.5" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-9" value="Place order" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="20" y="190" width="80" height="40" as="geometry" />
+        <mxCell id="ProductCatalog" value="Product Catalog" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Website">
+          <mxGeometry x="20" y="60" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-37" value="Browse Products" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="20" y="100" width="80" height="35" as="geometry" />
+        <mxCell id="ARExperience" value="AR Experience Viewer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Website">
+          <mxGeometry x="20" y="147.5" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-39" value="&lt;div&gt;Manage orders&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="180" y="80" width="60" height="30" as="geometry" />
+        <mxCell id="API" value="API Endpoints" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Backend">
+          <mxGeometry x="20" y="60" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-41" value="&lt;div&gt;Track order&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="20" y="350" width="80" height="40" as="geometry" />
+        <mxCell id="ModelProcessor" value="3D Model Processor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Backend">
+          <mxGeometry x="20" y="147.5" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-44" value="Manage Products" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="180" y="145" width="60" height="35" as="geometry" />
+        <mxCell id="ARCodeGenerator" value="AR Code Generator" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Backend">
+          <mxGeometry x="20" y="235" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-53" value="Deliver Orders" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="164" y="190" width="90" height="40" as="geometry" />
+        <mxCell id="StaticFiles" value="Static Files Storage" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Backend">
+          <mxGeometry x="20" y="322.5" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-64" value="Process Payment" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="80" y="290" width="85" height="30" as="geometry" />
+        <mxCell id="Database" value="Database" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Backend">
+          <mxGeometry x="20" y="410" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-50" value="Handle Refunds" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="175" y="40" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-72" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="115" y="315" width="20" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-75" value="COD" style="whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="75" y="400" width="50" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-76" value="Khalti" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_DyhmnH1X0i6e9Q3qZGH-2">
-          <mxGeometry x="175" y="360" width="60" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-77" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="_DyhmnH1X0i6e9Q3qZGH-2" source="_DyhmnH1X0i6e9Q3qZGH-76" target="_DyhmnH1X0i6e9Q3qZGH-72">
+        <mxCell id="MobileAppToBackend" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="ObjectScanner" target="API">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-200" y="410" as="sourcePoint" />
-            <mxPoint x="-150" y="360" as="targetPoint" />
+            <mxPoint x="500" y="200" as="sourcePoint" />
+            <mxPoint x="800" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-3" value="&lt;div&gt;Customer&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="250" y="375" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-5" value="" style="endArrow=none;html=1;rounded=0;entryX=0.039;entryY=0.653;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-3" target="_DyhmnH1X0i6e9Q3qZGH-4">
+        <mxCell id="BackendToMobileApp" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="API" target="ARViewer">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="370" y="345" as="sourcePoint" />
-            <mxPoint x="420" y="295" as="targetPoint" />
+            <mxPoint x="800" y="250" as="sourcePoint" />
+            <mxPoint x="500" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-8" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.001;entryY=0.733;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-3" target="_DyhmnH1X0i6e9Q3qZGH-6">
+        <mxCell id="WebsiteToBackend" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="ProductCatalog" target="API">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="320" y="445" as="sourcePoint" />
-            <mxPoint x="370" y="395" as="targetPoint" />
+            <mxPoint x="200" y="200" as="sourcePoint" />
+            <mxPoint x="500" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-11" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-3" target="_DyhmnH1X0i6e9Q3qZGH-9">
+        <mxCell id="BackendToWebsite" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="API" target="ARExperience">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="240" y="395" as="sourcePoint" />
-            <mxPoint x="380" y="425" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-36" value="&lt;div&gt;Admin&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="860" y="295" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-38" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-3" target="_DyhmnH1X0i6e9Q3qZGH-37">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="425" as="sourcePoint" />
-            <mxPoint x="390" y="375" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-40" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-39" target="_DyhmnH1X0i6e9Q3qZGH-36">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="650.0005241775592" y="299.69566788412544" as="sourcePoint" />
-            <mxPoint x="843.9699999999999" y="381.79999999999984" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-43" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-3" target="_DyhmnH1X0i6e9Q3qZGH-41">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="290" y="535" as="sourcePoint" />
-            <mxPoint x="340" y="485" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-45" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-44" target="_DyhmnH1X0i6e9Q3qZGH-36">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="575" as="sourcePoint" />
-            <mxPoint x="310" y="525" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-46" value="&lt;div&gt;Payment System&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="850" y="525" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-52" value="Shipping Service" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="860" y="405" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-56" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-52" target="_DyhmnH1X0i6e9Q3qZGH-53">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="590" y="665" as="sourcePoint" />
-            <mxPoint x="640" y="615" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-66" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-76" target="_DyhmnH1X0i6e9Q3qZGH-46">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="600" y="585" as="sourcePoint" />
-            <mxPoint x="650" y="535" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-74" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="_DyhmnH1X0i6e9Q3qZGH-72">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="530" y="595" as="sourcePoint" />
-            <mxPoint x="350" y="555" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-78" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-50" target="_DyhmnH1X0i6e9Q3qZGH-36">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="760" y="475" as="sourcePoint" />
-            <mxPoint x="810" y="425" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_DyhmnH1X0i6e9Q3qZGH-79" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_DyhmnH1X0i6e9Q3qZGH-3" target="_DyhmnH1X0i6e9Q3qZGH-64">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="240" y="585" as="sourcePoint" />
-            <mxPoint x="290" y="535" as="targetPoint" />
+            <mxPoint x="500" y="250" as="sourcePoint" />
+            <mxPoint x="200" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
