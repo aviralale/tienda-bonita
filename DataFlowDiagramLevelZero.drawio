@@ -1,10 +1,67 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0" version="26.0.16">
-  <diagram name="Page-1" id="Jy3rcE7uvyZ2h_moDESa">
-    <mxGraphModel>
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1132" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    
+    <!-- External Entities -->
+    <mxCell id="user" value="User" style="shape=rectangle;fillColor=#E3F2FD;strokeColor=#1E88E5;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="50" y="100" width="100" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="admin" value="Admin" style="shape=rectangle;fillColor=#E3F2FD;strokeColor=#1E88E5;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="50" y="200" width="100" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="payment_gateway" value="Payment Gateway" style="shape=rectangle;fillColor=#E3F2FD;strokeColor=#1E88E5;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="50" y="300" width="130" height="40" as="geometry" />
+    </mxCell>
+    
+    <!-- Processes -->
+    <mxCell id="login" value="User Login/Signup" style="ellipse;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="250" y="100" width="140" height="50" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="browse" value="Browse Products" style="ellipse;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="250" y="200" width="140" height="50" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="cart" value="Add to Cart" style="ellipse;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="250" y="300" width="140" height="50" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="checkout" value="Checkout & Payment" style="ellipse;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="250" y="400" width="140" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- Data Stores -->
+    <mxCell id="users_db" value="Users Database" style="shape=rectangle;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="450" y="100" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="products_db" value="Products Database" style="shape=rectangle;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="450" y="200" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="orders_db" value="Orders Database" style="shape=rectangle;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="450" y="300" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="payments_db" value="Payments Database" style="shape=rectangle;fillColor=#C8E6C9;strokeColor=#388E3C;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="450" y="400" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <!-- Data Flows -->
+    <mxCell id="flow1" edge="1" parent="1" source="user" target="login" style="edgeStyle=elbowEdgeStyle;strokeColor=#1E88E5;" />
+    <mxCell id="flow2" edge="1" parent="1" source="login" target="users_db" style="edgeStyle=elbowEdgeStyle;strokeColor=#1E88E5;" />
+    
+    <mxCell id="flow3" edge="1" parent="1" source="user" target="browse" style="edgeStyle=elbowEdgeStyle;strokeColor=#1E88E5;" />
+    <mxCell id="flow4" edge="1" parent="1" source="browse" target="products_db" style="edgeStyle=elbowEdgeStyle;strokeColor=#1E88E5;" />
+    
+    <mxCell id="flow5" edge="1" parent="1" source="user" target="cart" style="edgeStyle=elbowEdgeStyle;strokeColor=#1E88E5;" />
+    <mxCell id="flow6" edge="1" parent="1" source="cart" target="orders_db" style="edgeStyle=elbowEdgeStyle;strokeColor=#1E88E5;" />
+    
+    <mxCell id="flow7" edge="1" parent="1" source="checkout" target="payment_gateway" style="edgeStyle=elbowEdgeStyle;strokeColor=#1E88E5;" />
+    <mxCell id="flow8" edge="1" parent="1" source="payment_gateway" target="payments_db" style="edgeStyle=elbowEdgeStyle;strokeColor=#1E88E5;" />
+  </root>
+</mxGraphModel>
